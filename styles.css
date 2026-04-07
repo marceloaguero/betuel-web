@@ -243,3 +243,68 @@ button {
   width: 100%;
   text-align: center;
 }
+
+/* =============================================
+   SHARED SECTION LAYOUT
+   ============================================= */
+.section {
+  padding: var(--space-2xl) var(--space-md);
+}
+
+.section--alt {
+  background-color: rgba(30, 41, 59, 0.4);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container--narrow {
+  max-width: 640px;
+}
+
+.section__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+.section__title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
+}
+
+.section__body {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  line-height: 1.75;
+  margin-bottom: var(--space-lg);
+}
+
+/* =============================================
+   PILLS (About highlights)
+   ============================================= */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background-color: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--accent);
+}
