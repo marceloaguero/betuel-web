@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Betuel S.A. — Software development and IT consulting. DevOps, Cloud Infrastructure, SRE, and Tech Leadership services for US-based clients.">
+  <title>Betuel S.A. — Software Development & IT Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">BETUEL <span>S.A.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Software Development &amp; IT Consulting</p>
+      <h1 class="hero__headline">Engineering Solutions for<br>Modern Infrastructure</h1>
+      <p class="hero__sub">DevOps &middot; Cloud &middot; SRE &middot; Leadership &middot; AI&#8209;Driven&nbsp;Operations</p>
+      <a href="#contact" class="btn btn--primary">Get in Touch</a>
+      <p class="hero__location">San Rafael, Mendoza, Argentina &mdash; Serving US&#8209;based clients</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__label">About Us</p>
+      <h2 class="section__title">An Argentine company built for global delivery</h2>
+      <p class="section__body">
+        Betuel S.A. is an Argentine software development and IT consulting firm dedicated to serving international clients, primarily in the United States. We pair senior strategic leadership with a network of qualified professionals engaged for each engagement — covering analysis, design, development, and maintenance — so every project gets exactly the right expertise.
+      </p>
+      <div class="pills">
+        <span class="pill">US&#8209;focused</span>
+        <span class="pill">Cloud&#8209;native</span>
+        <span class="pill">Remote&#8209;first</span>
+        <span class="pill">AI&#8209;driven</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <p class="section__label">Services</p>
+      <h2 class="section__title">Two areas of deep expertise</h2>
+      <div class="cards">
+
+        <div class="card">
+          <div class="card__icon">&#9881;</div>
+          <h3 class="card__title">Cloud &amp; DevOps Engineering</h3>
+          <p class="card__sub">Infrastructure &amp; Site Reliability</p>
+          <ul class="card__list">
+            <li>Cloud infrastructure design &amp; management (AWS, GCP)</li>
+            <li>CI/CD pipeline implementation &amp; optimization</li>
+            <li>Monitoring, logging &amp; alerting systems</li>
+            <li>Site Reliability Engineering (SRE) practices</li>
+            <li>AI&#8209;assisted infrastructure &amp; operations</li>
+            <li>System administration &amp; automation</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">&#10070;</div>
+          <h3 class="card__title">Tech Leadership Consulting</h3>
+          <p class="card__sub">Leadership &amp; Talent Development</p>
+          <ul class="card__list">
+            <li>TAS &mdash; Talent Activation System</li>
+            <li>Engineering team restructuring</li>
+            <li>High&#8209;performance leadership development</li>
+            <li>Scaleup profitability consulting</li>
+            <li>Technical talent unlocking</li>
+            <li>Executive coaching for tech CEOs</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="container">
+      <p class="section__label">Our Team</p>
+      <h2 class="section__title">Senior leadership, qualified teams</h2>
+      <div class="cards">
+
+        <div class="card card--team">
+          <div class="card__avatar">MA</div>
+          <h3 class="card__name">Marcelo Aguero</h3>
+          <p class="card__role">CEO &amp; DevOps Lead</p>
+          <p class="card__bio">
+            DevOps and SRE specialist with deep expertise in cloud infrastructure on AWS and GCP. Leverages AI tooling to drive infrastructure-as-code, CI/CD pipelines, observability stacks, and operational automation at scale.
+          </p>
+        </div>
+
+        <div class="card card--team">
+          <div class="card__avatar">AG</div>
+          <h3 class="card__name">Aurelia Giannattasio</h3>
+          <p class="card__role">Partner &amp; Tech Leadership Consultant</p>
+          <p class="card__bio">
+            Transforms chaotic technical operations into predictable profitability. Through her TAS (Talent Activation System) method, she activates dormant leadership potential within tech teams — helping scaleup CEOs build self-sufficient organizations that execute and grow without bottlenecking on the founder.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container container--narrow">
+      <p class="section__label">Contact</p>
+      <h2 class="section__title">Let's work together</h2>
+      <p class="section__body">
+        Ready to modernize your infrastructure or unlock your team's leadership potential? Send us a message and we'll get back to you within one business day.
+      </p>
+
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="form__honeypot">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
+        <div class="form__row">
+          <label class="form__label" for="name">Name</label>
+          <input class="form__input" type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__input form__input--textarea" id="message" name="message" required placeholder="Tell us about your project or challenge..." rows="5"></textarea>
+        </div>
+        <button class="btn btn--primary btn--full" type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <a href="mailto:info@betuelsa.com" class="contact-info__item">info@betuelsa.com</a>
+        <span class="contact-info__sep">&middot;</span>
+        <span class="contact-info__item">San Rafael, Mendoza, Argentina</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Betuel S.A. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
