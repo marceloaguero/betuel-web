@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Betuel S.A. — Software development and IT consulting. DevOps, Cloud Infrastructure, SRE, and Tech Leadership services for US-based clients.">
-  <title>Betuel S.A. — Software Development & IT Consulting</title>
+  <title>Betuel S.A. — Software Development &amp; IT Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,10 +13,10 @@
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">BETUEL <span>S.A.</span></a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <a href="#home" class="nav__logo">BETUEL <span>S.A.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
@@ -28,6 +28,7 @@
     </div>
   </nav>
 
+  <main>
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero__inner">
@@ -61,9 +62,9 @@
     <div class="container">
       <p class="section__label">Services</p>
       <h2 class="section__title">Two areas of deep expertise</h2>
-      <div class="cards">
+      <ul class="cards">
 
-        <div class="card">
+        <li class="card">
           <div class="card__icon">&#9881;</div>
           <h3 class="card__title">Cloud &amp; DevOps Engineering</h3>
           <p class="card__sub">Infrastructure &amp; Site Reliability</p>
@@ -75,9 +76,9 @@
             <li>AI&#8209;assisted infrastructure &amp; operations</li>
             <li>System administration &amp; automation</li>
           </ul>
-        </div>
+        </li>
 
-        <div class="card">
+        <li class="card">
           <div class="card__icon">&#10070;</div>
           <h3 class="card__title">Tech Leadership Consulting</h3>
           <p class="card__sub">Leadership &amp; Talent Development</p>
@@ -89,9 +90,9 @@
             <li>Technical talent unlocking</li>
             <li>Executive coaching for tech CEOs</li>
           </ul>
-        </div>
+        </li>
 
-      </div>
+      </ul>
     </div>
   </section>
 
@@ -100,27 +101,27 @@
     <div class="container">
       <p class="section__label">Our Team</p>
       <h2 class="section__title">Senior leadership, qualified teams</h2>
-      <div class="cards">
+      <ul class="cards">
 
-        <div class="card card--team">
+        <li class="card card--team">
           <div class="card__avatar">MA</div>
           <h3 class="card__name">Marcelo Aguero</h3>
           <p class="card__role">CEO &amp; DevOps Lead</p>
           <p class="card__bio">
             DevOps and SRE specialist with deep expertise in cloud infrastructure on AWS and GCP. Leverages AI tooling to drive infrastructure-as-code, CI/CD pipelines, observability stacks, and operational automation at scale.
           </p>
-        </div>
+        </li>
 
-        <div class="card card--team">
+        <li class="card card--team">
           <div class="card__avatar">AG</div>
           <h3 class="card__name">Aurelia Giannattasio</h3>
           <p class="card__role">Partner &amp; Tech Leadership Consultant</p>
           <p class="card__bio">
             Transforms chaotic technical operations into predictable profitability. Through her TAS (Talent Activation System) method, she activates dormant leadership potential within tech teams — helping scaleup CEOs build self-sufficient organizations that execute and grow without bottlenecking on the founder.
           </p>
-        </div>
+        </li>
 
-      </div>
+      </ul>
     </div>
   </section>
 
@@ -160,6 +161,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
