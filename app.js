@@ -5,7 +5,7 @@ const links  = document.getElementById('navLinks');
 if (toggle && links) {
   toggle.addEventListener('click', () => {
     const open = links.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', open);
+    toggle.setAttribute('aria-expanded', String(open));
   });
 
   // Close nav when a link is clicked (smooth-scroll to section)
