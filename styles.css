@@ -408,18 +408,14 @@ button {
 }
 
 .card__avatar {
-  width: 56px;
-  height: 56px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  background: var(--gradient);
-  color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  object-position: 50% 15%;
   margin: 0 auto var(--space-sm);
-  letter-spacing: 0.05em;
+  display: block;
+  border: 3px solid var(--border);
 }
 
 .card__name {
