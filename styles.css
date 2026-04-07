@@ -485,7 +485,7 @@ button {
 
 .form__input:focus {
   outline: none;
-  border-color: var(--border);
+  border-color: var(--text-faint);
 }
 
 .form__input:focus-visible {
@@ -519,7 +519,7 @@ button {
   color: var(--text-faint);
 }
 
-.contact-info__item:hover {
+a.contact-info__item:hover {
   color: var(--accent);
 }
 
@@ -552,6 +552,9 @@ button {
    REDUCED MOTION
    ============================================= */
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   *, *::before, *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
